@@ -633,16 +633,16 @@
                 "drawing_id": "0da901c0-6e2c-4cf4-94da-a7aa273ea9c1",
                 "locked": true,
                 "rotation": 0,
-                "svg": "<svg width=\"52\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.2.10.0</text></svg>",
-                "x": 53,
-                "y": 439,
+                "svg": "<svg width=\"69\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.2.10.0/24</text></svg>",
+                "x": 36,
+                "y": 438,
                 "z": 2
             },
             {
                 "drawing_id": "578a398c-9740-4a3d-bc57-d0e74c0d17be",
                 "locked": true,
                 "rotation": 0,
-                "svg": "<svg width=\"54\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.2.20.0</text></svg>",
+                "svg": "<svg width=\"71\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.2.20.0/24</text></svg>",
                 "x": 197,
                 "y": 440,
                 "z": 2
@@ -651,8 +651,8 @@
                 "drawing_id": "7fb83a4e-f15b-46c0-8014-fae2d44201cb",
                 "locked": true,
                 "rotation": 0,
-                "svg": "<svg width=\"55\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.2.30.0</text></svg>",
-                "x": 347,
+                "svg": "<svg width=\"69\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.2.10.0/24</text></svg>",
+                "x": 336,
                 "y": 440,
                 "z": 2
             },
@@ -660,9 +660,225 @@
                 "drawing_id": "085010a4-f00e-4389-8254-f2fb17651f63",
                 "locked": true,
                 "rotation": 0,
-                "svg": "<svg width=\"54\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.2.40.0</text></svg>",
+                "svg": "<svg width=\"71\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.2.20.0/24</text></svg>",
                 "x": 493,
                 "y": 439,
+                "z": 2
+            },
+            {
+                "drawing_id": "e916bcbe-5f21-4913-91fe-47d67b981c76",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"18\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.2</text></svg>",
+                "x": 369,
+                "y": 468,
+                "z": 2
+            },
+            {
+                "drawing_id": "5b30e7d5-a003-4f6b-849c-0f00c37b9876",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"18\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.2</text></svg>",
+                "x": 510,
+                "y": 469,
+                "z": 2
+            },
+            {
+                "drawing_id": "37966041-ced5-4f0a-889a-5ff884ce1531",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"16\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.1</text></svg>",
+                "x": 72,
+                "y": 465,
+                "z": 2
+            },
+            {
+                "drawing_id": "c7094f30-c482-4eff-8bde-9fce65aa55ea",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"16\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.1</text></svg>",
+                "x": 210,
+                "y": 466,
+                "z": 2
+            },
+            {
+                "drawing_id": "1d330f13-27f2-4f33-82df-ac40c7f9fa19",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"16\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.1</text></svg>",
+                "x": 209,
+                "y": 257,
+                "z": 2
+            },
+            {
+                "drawing_id": "760f9e87-7931-4410-a07d-b31ea4a2d007",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"16\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.1</text></svg>",
+                "x": 249,
+                "y": 252,
+                "z": 2
+            },
+            {
+                "drawing_id": "3315ea74-3dd4-41c6-8e55-8dc004637c92",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"16\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.1</text></svg>",
+                "x": 332,
+                "y": 252,
+                "z": 2
+            },
+            {
+                "drawing_id": "393ab65c-a237-430b-b3d7-2441f4d90341",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"16\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.1</text></svg>",
+                "x": 377,
+                "y": 258,
+                "z": 2
+            },
+            {
+                "drawing_id": "fbbb9cce-ec50-45d3-90ed-e21efe5707e2",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"18\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.2</text></svg>",
+                "x": 181,
+                "y": 307,
+                "z": 2
+            },
+            {
+                "drawing_id": "9777f518-e7b3-41d1-aba1-6b078ac12679",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"18\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.2</text></svg>",
+                "x": 200,
+                "y": 336,
+                "z": 2
+            },
+            {
+                "drawing_id": "664633ce-477c-40df-980c-9076e8598db7",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"18\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.2</text></svg>",
+                "x": 390,
+                "y": 342,
+                "z": 2
+            },
+            {
+                "drawing_id": "0c9b1f0f-5329-407f-a891-0d73b9cc2d23",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"18\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.2</text></svg>",
+                "x": 432,
+                "y": 313,
+                "z": 2
+            },
+            {
+                "drawing_id": "feb21466-6dae-4010-bea3-5a20d6d2988b",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"31\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.254</text></svg>",
+                "x": 87,
+                "y": 411,
+                "z": 2
+            },
+            {
+                "drawing_id": "43b5f6ea-9eb0-4855-96a9-da665a99f1ff",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"31\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.254</text></svg>",
+                "x": 177,
+                "y": 410,
+                "z": 2
+            },
+            {
+                "drawing_id": "c02a933d-eef7-43ac-ab8f-c85e857e5573",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"31\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.254</text></svg>",
+                "x": 387,
+                "y": 410,
+                "z": 2
+            },
+            {
+                "drawing_id": "6eb27e81-8695-4bcd-8549-40234775e6e9",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"31\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">.254</text></svg>",
+                "x": 475,
+                "y": 411,
+                "z": 2
+            },
+            {
+                "drawing_id": "7bc6cb06-a834-4818-b670-9d6e093c970b",
+                "locked": true,
+                "rotation": 297,
+                "svg": "<svg width=\"63\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.1.4.0/30</text></svg>",
+                "x": 152,
+                "y": 322,
+                "z": 2
+            },
+            {
+                "drawing_id": "c699144a-96d8-455f-adbb-1cf76aca425e",
+                "locked": true,
+                "rotation": 326,
+                "svg": "<svg width=\"63\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.2.1.0/30</text></svg>",
+                "x": 221,
+                "y": 327,
+                "z": 2
+            },
+            {
+                "drawing_id": "32ca2c01-f6a0-4517-9d65-a1f9ed19920f",
+                "locked": true,
+                "rotation": 34,
+                "svg": "<svg width=\"63\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.1.2.0/30</text></svg>",
+                "x": 331,
+                "y": 295,
+                "z": 2
+            },
+            {
+                "drawing_id": "3f89fe96-99a1-439a-a44f-29b62d74896b",
+                "locked": true,
+                "rotation": 63,
+                "svg": "<svg width=\"65\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.1.3.0/30</text></svg>",
+                "x": 416,
+                "y": 263,
+                "z": 2
+            },
+            {
+                "drawing_id": "b760e8f8-ba87-48ad-b33d-6bcdce0148b9",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"63\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.4.4.4/32</text></svg>",
+                "x": 139,
+                "y": 178,
+                "z": 2
+            },
+            {
+                "drawing_id": "076a50d2-dcc7-4f7c-bb0e-4795b64f3c14",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"67\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.3.3.3/32</text></svg>",
+                "x": 402,
+                "y": 179,
+                "z": 2
+            },
+            {
+                "drawing_id": "2d74cdde-aac0-43f4-bc46-69f7367d3525",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"63\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.2.2.2/32</text></svg>",
+                "x": 484,
+                "y": 352,
+                "z": 2
+            },
+            {
+                "drawing_id": "85e843b2-6fe0-4fea-b62a-2ea43bfb0136",
+                "locked": true,
+                "rotation": 0,
+                "svg": "<svg width=\"59\" height=\"20\"><text font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\" fill=\"#000000\" fill-opacity=\"1.0\">3.1.1.1/32</text></svg>",
+                "x": 33,
+                "y": 367,
                 "z": 2
             }
         ],
@@ -1393,7 +1609,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "c4a941425e22a8d180fe99fc9a80eead4c74ceaa7f4db76d297b8a198eb11d14",
+                    "container_id": "0119f3b20625a8d287fec53966048e1c54d276782cc3716e5e495250c0320124",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -1463,7 +1679,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "971acbac402501684681a4503013aba7ed972a1f65709eb8635636c1f911f367",
+                    "container_id": "e2092f5a232db488af3657b4343568377eef97ceecc5dc063448318b007c2331",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -1533,7 +1749,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "41d361f10397cf805528c73e7c68af0c3c50a104f46f5adb3e6fb34270512ee4",
+                    "container_id": "a2a39c0e242a1cc904b89042635254b8874dc27eebc5471e5e042ef369645992",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -1603,7 +1819,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "29c14e11620b312e123ed06d54ff72da4082cba4a8ade59d5ecabeed36d162a8",
+                    "container_id": "308a73125f6e0015140134ecf33c58fd6a5c61a70b0ad1620ec877eac95806da",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -1673,7 +1889,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "a71c480c5c6af27706e80994d3a09e86c6d27bf63b3cfb5a632d880e0922ca23",
+                    "container_id": "355c6cc57be490d1cb71e4adb808a4ad1d557d07b8e6cfe88f0e46362cfce274",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -1743,7 +1959,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "b29a5889ee63a6f49ba0ef60fa2be2cfea37ba63d98270e754af2d73c1651343",
+                    "container_id": "b0ea767fccc4265330ec403da69fe15808bb684d52cdd654890c90b6c2c964e9",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -1813,7 +2029,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "88e8e6aeb1593c67fa2f9ca4b40a79967b07a1ff54eeebdfcbc3ae80674ca448",
+                    "container_id": "e7ffdd1102b1ea1ddbae8ef38b1ef5f79d20e9da5adc8809efef4511609d9949",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -1883,7 +2099,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "25953db96fc3329b6aecad39cb46701e1e9c22b35423519d8a194695d97c6064",
+                    "container_id": "7186b42bf7659f8dc9644fe89584f32eabb9776ff53b89076e9d45395081f8a7",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -1928,7 +2144,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "4efe06c0ff2ee8e8c40f8d80fa1e95aa9b1c33b640bbf6508dabcfa8cd45d8b6",
+                    "container_id": "232bdf5569433e40d1a4530abd78f761d879c76aa94a49fac579034a9cbe5ffb",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -1972,7 +2188,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "afbb24445b4f686d1a5b13c41d1383089329b2eb586a63a3d035425a54d536f8",
+                    "container_id": "8019e4d1df6d47dd23bfc07a95603de6924f1b4811abb07fcecc62b9f300924d",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -2016,7 +2232,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "186f81d0ac5911df6571bf6c6cc04c24b7aa19dfe529cb6de945927f34bb655b",
+                    "container_id": "d33417d540086945785f1c8d20e1d7a0fdc68cf59cbeb37c941d2a33e3fa6588",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -2060,7 +2276,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "bf71bc509c6996256e6d11b5569a430c6c8b5c68de281b29f7de4f1915dde598",
+                    "container_id": "341d9e1e386321b05da1e0e8859873d096c99e14cce702ea06a52f88c68fa081",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -2104,7 +2320,7 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "0812549098fbfad1c768e2b6bf47e1cc89bb913e611ec1e462498446c1e7bd1f",
+                    "container_id": "03acab0d08a3e5a78ecf992f1dece141bc0faeeba592715292a75a0733340dc4",
                     "environment": "",
                     "extra_hosts": "",
                     "extra_volumes": [
@@ -2304,14 +2520,14 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "76464ce9ae6e792272db04d1c71a754abeb89eedf8f90657b4fd141f76d317b3",
-                    "environment": null,
-                    "extra_hosts": null,
+                    "container_id": "8f01a902dfcc7c4b0922b0d652b4be7423a2ce3032d2da8fb4166eaa2c05afb3",
+                    "environment": "",
+                    "extra_hosts": "",
                     "extra_volumes": [
                         "/root"
                     ],
                     "image": "nsdcourse/basenet:latest",
-                    "start_command": null,
+                    "start_command": "/root/start.sh",
                     "usage": ""
                 },
                 "symbol": ":/symbols/affinity/circle/green/client.svg",
@@ -2348,14 +2564,14 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "fd7799e439aba4789afb9662ac71e3ddfa55e0c815feaea6ecc795b5c7df26de",
-                    "environment": null,
-                    "extra_hosts": null,
+                    "container_id": "1225c8503d4588572a5921b8f941da250ba52bfb673b36cdf76578f23d096e73",
+                    "environment": "",
+                    "extra_hosts": "",
                     "extra_volumes": [
                         "/root"
                     ],
                     "image": "nsdcourse/basenet:latest",
-                    "start_command": null,
+                    "start_command": "/root/start.sh",
                     "usage": ""
                 },
                 "symbol": ":/symbols/affinity/circle/green/client.svg",
@@ -2392,14 +2608,14 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "3f8bca1231bbdfbab72752894c0141b556db50f7ddb4fb5ea684607ba6467e85",
-                    "environment": null,
-                    "extra_hosts": null,
+                    "container_id": "36c3c69c7ea057e453c4c42c0fdbf0e1b773a26806f6c129093e750cb83d68dd",
+                    "environment": "",
+                    "extra_hosts": "",
                     "extra_volumes": [
                         "/root"
                     ],
                     "image": "nsdcourse/basenet:latest",
-                    "start_command": null,
+                    "start_command": "/root/start.sh",
                     "usage": ""
                 },
                 "symbol": ":/symbols/affinity/circle/green/client.svg",
@@ -2436,14 +2652,14 @@
                     "console_http_path": "/",
                     "console_http_port": 80,
                     "console_resolution": "1024x768",
-                    "container_id": "1e1866ece650755a3eb99028c45636d7a2e222e2f1178ec297209017023ee716",
-                    "environment": null,
-                    "extra_hosts": null,
+                    "container_id": "7e514e72b0dbd618ac05335cdd10d75086257116265b2c1719a0b3a0e3a4f2fd",
+                    "environment": "",
+                    "extra_hosts": "",
                     "extra_volumes": [
                         "/root"
                     ],
                     "image": "nsdcourse/basenet:latest",
-                    "start_command": null,
+                    "start_command": "/root/start.sh",
                     "usage": ""
                 },
                 "symbol": ":/symbols/affinity/circle/green/client.svg",
@@ -2458,5 +2674,5 @@
     "type": "topology",
     "variables": null,
     "version": "2.2.34",
-    "zoom": 71
+    "zoom": 100
 }
