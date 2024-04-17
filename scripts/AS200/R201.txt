@@ -1,0 +1,29 @@
+interface eth0
+ ip address 10.0.21.2/30
+exit
+!
+interface eth1
+ ip address 10.0.22.1/30
+exit
+!
+interface lo
+ ip address 2.1.0.1/16
+ ip address 2.255.0.1/32
+exit
+!
+router bgp 200
+ network 2.1.0.0/16
+ neighbor 2.255.0.2 remote-as 200
+ neighbor 2.255.0.2 update-source 2.255.0.1
+ neighbor 2.255.0.2 next-hop-self
+ neighbor 10.0.22.2 remote-as 100
+exit
+!
+router ospf
+ router-id 2.255.0.1
+ network 2.1.0.0/16 area 0
+ network 2.255.0.1/32 area 0
+ network 10.0.21.0/30 area 0
+exit
+!
+end

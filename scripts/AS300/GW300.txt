@@ -1,0 +1,19 @@
+ip addr add 3.0.23.2/30 dev eth1
+ip route add default via 3.0.23.1
+
+sysctl -w net.ipv4.ip_forward=1
+
+ip link add link eth0 name eth0.100 type vlan id 100
+ip link add link eth0 name eth0.200 type vlan id 200
+
+ip addr add 3.10.10.1/16 dev eth0.100
+ip addr add 3.10.10.1/16 dev eth0.200
+
+ip link set eth0.100 up
+ip link set eth0.200 up
+
+ip route add 3.2.10.0/24 via 3.10.10.254 dev eth0.100
+ip route add 3.2.20.0/24 via 3.10.10.254 dev eth0.200
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -A POSTROUTING -t nat -o eth1 -j MASQUERADE
