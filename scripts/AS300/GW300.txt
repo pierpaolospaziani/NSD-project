@@ -15,5 +15,4 @@ ip link set eth0.200 up
 ip route add 3.2.10.0/24 via 3.10.10.254 dev eth0.100
 ip route add 3.2.20.0/24 via 3.10.10.254 dev eth0.200
 
-echo 1 > /proc/sys/net/ipv4/ip_forward
 iptables -A POSTROUTING -t nat -o eth1 -j MASQUERADE

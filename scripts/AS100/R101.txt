@@ -1,10 +1,10 @@
 interface eth0
  ip address 10.0.23.1/30
+ mpls enable
 exit
 !
 interface eth1
  ip address 10.0.22.2/30
- mpls enable
 exit
 !
 interface lo
@@ -14,18 +14,18 @@ interface lo
 exit
 !
 router bgp 100
- network 1.1.0.0/16
- neighbor 1.2.0.1 remote-as 100
- neighbor 1.2.0.1 update-source 1.1.0.1
- neighbor 1.2.0.1 next-hop-self
- neighbor 1.255.0.2 remote-as 100
- neighbor 1.255.0.2 update-source 1.255.0.1
- neighbor 1.255.0.2 next-hop-self
+ neighbor 1.255.0.3 remote-as 100
+ neighbor 1.255.0.3 update-source 1.255.0.1
  neighbor 10.0.22.1 remote-as 200
+ !
+ address-family ipv4 unicast
+  network 1.1.0.0/16
+  neighbor 1.255.0.3 next-hop-self
+ exit-address-family
 exit
 !
 router ospf
- router-id 1.255.0.1
+ ospf router-id 1.255.0.1
  network 1.1.0.0/16 area 0
  network 1.255.0.1/32 area 0
  network 10.0.23.0/30 area 0
@@ -38,7 +38,7 @@ mpls ldp
  address-family ipv4
   discovery transport-address 1.255.0.1
   !
-  interface eth1
+  interface eth0
   exit
   !
   interface lo

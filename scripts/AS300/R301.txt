@@ -1,9 +1,9 @@
 interface eth0
- ip address 10.0.33.2/30
+ ip address 10.0.34.1/30
 exit
 !
 interface eth1
- ip address 10.0.34.1/30
+ ip address 10.0.33.1/30
 exit
 !
 interface lo
@@ -14,7 +14,7 @@ exit
 router bgp 300
  neighbor 3.255.0.2 remote-as 300
  neighbor 3.255.0.2 update-source 3.255.0.1
- neighbor 10.0.33.1 remote-as 100
+ neighbor 10.0.33.2 remote-as 100
  !
  address-family ipv4 unicast
   network 3.1.0.0/16
@@ -24,7 +24,6 @@ exit
 !
 router ospf
  ospf router-id 3.255.0.1
- network 3.0.0.0/16 area 0
  network 3.1.0.0/16 area 0
  network 3.255.0.1/32 area 0
  network 10.0.34.0/30 area 0

@@ -4,5 +4,5 @@ ip route add default via 4.0.12.2
 
 sysctl -w net.ipv4.ip_forward=1
 
-export NET=eth0
-iptables -t nat -A POSTROUTING -o $NET -j MASQUERADE
+echo 1 > /proc/sys/net/ipv4/ip_forward
+iptables -A POSTROUTING -t nat -o eth1 -j MASQUERADE
