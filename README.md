@@ -1,5 +1,5 @@
 
-# Progetto-NSD
+# NSD-project
 
 ### Autore
 
@@ -909,17 +909,22 @@ including the encapsulation in OpenVPN tunnels when necessary.
 Per avviare il servizio **OpenVPN** basta eseguire i seguenti comandi sulle relative macchine:
 
  - #### Client-200
-      Nella directory `/root/ovpn`:
+   Nella directory `/root/ovpn`:
+   
     ```shell
   openvpn client1.ovpn
     ```
+    
  - #### GW300
-      Nella directory `/root/CA/server`:
+   Nella directory `/root/CA/server`:
+   
     ```shell
   openvpn server.ovpn
     ```
+    
  - #### R402
-      Nella directory `/root/ovpn`:
+   Nella directory `/root/ovpn`:
+   
     ```shell
   openvpn client2.ovpn
     ```
