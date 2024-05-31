@@ -900,31 +900,35 @@ including the encapsulation in OpenVPN tunnels when necessary.
       Configurazione dell'**interfaccia** `eth0` e della default route verso `R402`:
     
     ```shell
-  ip addr add 192.168.40.2/24 dev eth0
-  ip route add default via 192.168.40.1
+    ip addr add 192.168.40.2/24 dev eth0
+    ip route add default via 192.168.40.1
     ```
 
 ### OpenVPN
 
 Per avviare il servizio **OpenVPN** basta eseguire i seguenti comandi sulle relative macchine:
 
+  
  - #### Client-200
-   Nella directory `/root/ovpn`:
-   
+    
+      Nella directory `/root/ovpn`:
+    
     ```shell
-  openvpn client1.ovpn
+	openvpn client1.ovpn
     ```
     
  - #### GW300
-   Nella directory `/root/CA/server`:
-   
+
+      Nella directory `/root/CA/server`:
+      
     ```shell
-  openvpn server.ovpn
+	openvpn server.ovpn
     ```
     
  - #### R402
-   Nella directory `/root/ovpn`:
-   
+
+      Nella directory `/root/ovpn`:
+      
     ```shell
-  openvpn client2.ovpn
+	openvpn client2.ovpn
     ```
