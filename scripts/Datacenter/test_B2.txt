@@ -1,0 +1,36 @@
+#!/bin/bash
+
+test_failed=false
+
+ping_and_print_result() {
+    ip_address=$1
+    if ! ping -c 1 -W 1 "$ip_address" >/dev/null 2>&1; then
+        test_failed=true
+        echo "Errore: Il test per $ip_address non è stato superato!"
+    fi
+}
+
+# Test A1
+ping_and_print_result "3.2.10.1"
+
+# Test B1
+ping_and_print_result "3.2.20.1"
+
+#Test B2
+ping_and_print_result "3.2.10.2"
+
+#Test GW300
+ping_and_print_result "3.0.23.2"
+
+#Test R302
+ping_and_print_result "3.2.0.1"
+
+# Verifica finale
+if [ "$test_failed" = false ]; then
+    echo "Test superati, raggiungo:"
+    echo " - A1"
+    echo " - B1"
+    echo " - B2"
+    echo " - GW300"
+    echo " - R302"
+fi

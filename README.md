@@ -1,4 +1,3 @@
-
 # NSD-project
 
 ### Autore
@@ -10,6 +9,31 @@
 <p align="center">  
   <img width=90% src="images/topology.png">
 </p>
+
+## Indice
+1. [AS100](#as100)
+  - [R101](#r101)
+  - [R102](#r102)
+  - [R103](#r103)
+2. [AS200](#as200)
+  - [R201](#r201)
+  - [R202](#r202)
+  - [R203](#r203) [[Firewall](#firewall)]
+3. [Client-200](#client-200) [[AppArmor](#mandatory-access-control-→-apparmor)]
+4. [AS300](#as300)
+  - [R301](#r301)
+  - [R302](#r302)
+  - [GW300](#gw300)
+5. [DC Network](#dc-network)
+  - [Spine 1](#spine-1) | [Spine 2](#spine-2)
+  - [Leaf 1](#leaf-1) | [Leaf 2](#leaf-2)
+  - [A1](#a1) | [B1](#b1) | [A2](#a2) | [B2](#b2)
+6. [AS400](#as400)
+  - [R401](#r401)
+  - [R402](#r402)
+7. [Client-400](#client-400)
+8. [OpenVPN](#openvpn)
+
 
 ### AS100
 
@@ -334,6 +358,7 @@
   sysctl -w net.ipv4.ip_forward=1
   ```
 
+  #### Firewall
   Configurazione del **firewall** che:
   - Accetta i pacchetti che arrivano dall'interfaccia di rete locale e sono destinati alla rete esterna
   - Accetta i pacchetti che appartengono a connessioni già stabilite
@@ -536,7 +561,7 @@
   ip route add 3.2.20.0/24 via 3.10.10.254 dev eth0.200
   ```
   
-  Si abilita il NAT verso l'interfaccia `eth1` per evitare la comunicazione tra i due tenant a causa del gateway in comune:
+  Si abilita il NAT verso l'interfaccia `eth1` e si evita la comunicazione tra i due tenant a causa del gateway in comune:
   
   ```shell
   iptables -A POSTROUTING -t nat -o eth1 -j MASQUERADE
@@ -914,7 +939,7 @@ Per avviare il servizio **OpenVPN** basta eseguire i seguenti comandi sulle rela
       Nella directory `/root/ovpn`:
     
     ```shell
-	openvpn client1.ovpn
+  openvpn client1.ovpn
     ```
     
  - #### GW300
@@ -922,7 +947,7 @@ Per avviare il servizio **OpenVPN** basta eseguire i seguenti comandi sulle rela
       Nella directory `/root/CA/server`:
       
     ```shell
-	openvpn server.ovpn
+  openvpn server.ovpn
     ```
     
  - #### R402
@@ -930,5 +955,147 @@ Per avviare il servizio **OpenVPN** basta eseguire i seguenti comandi sulle rela
       Nella directory `/root/ovpn`:
       
     ```shell
-	openvpn client2.ovpn
+  openvpn client2.ovpn
     ```
+
+  #### Configurazione
+
+- `GW300`
+
+  Inizializzazione PKI e build della Certification Authority:
+
+  ```shell
+  # in /usr/share/easy-rsa
+  ./easyrsa init-pki
+  ./easyrsa build-ca nopass
+  ```
+
+  Generazione del certificato del server (`GW300`) e dei client (`Client-200` e `R402`):
+
+  ```shell
+  ./easyrsa build-server-full server nopass
+  ./easyrsa build-client-full client1 nopass
+  ./easyrsa build-client-full client2 nopass
+  ```
+
+  Generazione dei parametri Diffie Hellman:
+
+  ```shell
+  ./easyrsa gen-dh
+  ```
+
+  Avendo la directory `root` persistente, si sposta tutto lì:
+
+  ```shell
+  mkdir /root/CA
+  mkdir /root/CA/server
+  mkdir /root/CA/client1
+  mkdir /root/CA/client2
+
+  cp pki/ca.crt /root/CA/
+  cp pki/issued/server.crt /root/CA/server/
+  cp pki/private/server.key /root/CA/server/
+  cp pki/dh.pem /root/CA/server/
+
+  cp pki/issued/client1.crt /root/CA/client1/
+  cp pki/private/client1.key /root/CA/client1/
+
+  cp pki/issued/client2.crt /root/CA/client2/
+  cp pki/private/client2.key /root/CA/client2/
+  ```
+
+Distribuzione del materiale crittografico sui client:
+
+- `Client-200`
+
+  ```shell
+  mkdir ovpn
+  cd ovpn
+  vim ca.crt      # copy-paste server's /root/CA/ca.crt
+  vim client1.crt   # copy-paste server's /root/CA/client1/client1.crt
+  vim client1.key   # copy-paste server's /root/CA/client1/client1.key
+  ```
+- `R402`
+  ```shell
+  mkdir ovpn
+  cd ovpn
+  vim ca.crt      # copy-paste server's /root/CA/ca.crt
+  vim client2.crt   # copy-paste server's /root/CA/client2/client2.crt
+  vim client2.key   # copy-paste server's /root/CA/client2/client2.key
+  ```
+
+Creazione dei file di configurazione:
+
+- `GW300`
+Per comodità si copia in `root/CA/server` il certificato `ca.crt`:
+  
+  ```shell
+  cp /root/CA/ca.crt /root/CA/server
+  ```
+  
+  In questa directory si crea il file di configurazione `server.ovpn`:
+  
+  ```shell
+  port 1194
+  proto udp
+  dev tun
+  ca ca.crt
+  cert server.crt
+  key server.key
+  dh dh.pem
+  server 192.168.100.0 255.255.255.0
+  push "route 192.168.200.2 255.255.255.255"
+  push "route 192.168.40.0 255.255.255.0"
+  push "route 3.2.10.0 255.255.255.0"
+  route 192.168.200.2 255.255.255.255
+  route 192.168.40.0 255.255.255.0
+  client-config-dir ccd
+  client-to-client
+  keepalive 10 120
+  cipher AES-256-GCM
+  ```
+  
+  Si crea una directory `ccd` (*Client Configuration Directory*) e al suo interno un file `client2`:
+  
+  ```shell
+  mkdir ccd
+  vim ccd/client2
+  ```
+  il cui contenuto è:
+  
+  ```shell
+  iroute 192.168.40.0 255.255.255.0
+  ```
+  che indica che `client2` è il next-hop per `192.168.40.0`.
+  
+- `Client-200`
+  Nella directory `root/ovpn` si crea il file di configurazione `client1.ovpn`:
+  
+  ```shell
+  client
+  dev tun
+  proto udp
+  remote 3.0.23.2 1194
+  resolv-retry infinite
+  ca ca.crt
+  cert client1.crt
+  key client1.key
+  remote-cert-tls server
+  cipher AES-256-GCM
+  ```
+  
+- `R402`
+  Nella directory `root/ovpn` si crea il file di configurazione `client2.ovpn`:
+  
+  ```shell
+  client
+  dev tun
+  proto udp
+  remote 3.0.23.2 1194
+  resolv-retry infinite
+  ca ca.crt
+  cert client2.crt
+  key client2.key
+  remote-cert-tls server
+  cipher AES-256-GCM
+  ```
