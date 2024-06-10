@@ -12,25 +12,25 @@
 
 ## Indice
 1. [AS100](#as100)
-  - [R101](#r101)
-  - [R102](#r102)
-  - [R103](#r103)
+    - [R101](#r101)
+    - [R102](#r102)
+    - [R103](#r103)
 2. [AS200](#as200)
-  - [R201](#r201)
-  - [R202](#r202)
-  - [R203](#r203) [[Firewall](#firewall)]
+    - [R201](#r201)
+    - [R202](#r202)
+    - [R203](#r203) [[Firewall](#firewall)]
 3. [Client-200](#client-200) [[AppArmor](#mandatory-access-control-→-apparmor)]
 4. [AS300](#as300)
-  - [R301](#r301)
-  - [R302](#r302)
-  - [GW300](#gw300)
+    - [R301](#r301)
+    - [R302](#r302)
+    - [GW300](#gw300)
 5. [DC Network](#dc-network)
-  - [Spine 1](#spine-1) | [Spine 2](#spine-2)
-  - [Leaf 1](#leaf-1) | [Leaf 2](#leaf-2)
-  - [A1](#a1) | [B1](#b1) | [A2](#a2) | [B2](#b2)
+    - [Spine 1](#spine-1) | [Spine 2](#spine-2)
+    - [Leaf 1](#leaf-1) | [Leaf 2](#leaf-2)
+    - [A1](#a1) | [B1](#b1) | [A2](#a2) | [B2](#b2)
 6. [AS400](#as400)
-  - [R401](#r401)
-  - [R402](#r402)
+    - [R401](#r401)
+    - [R402](#r402)
 7. [Client-400](#client-400)
 8. [OpenVPN](#openvpn)
 
@@ -939,7 +939,7 @@ Per avviare il servizio **OpenVPN** basta eseguire i seguenti comandi sulle rela
       Nella directory `/root/ovpn`:
     
     ```shell
-  openvpn client1.ovpn
+    openvpn client1.ovpn
     ```
     
  - #### GW300
@@ -947,7 +947,7 @@ Per avviare il servizio **OpenVPN** basta eseguire i seguenti comandi sulle rela
       Nella directory `/root/CA/server`:
       
     ```shell
-  openvpn server.ovpn
+    openvpn server.ovpn
     ```
     
  - #### R402
@@ -955,7 +955,7 @@ Per avviare il servizio **OpenVPN** basta eseguire i seguenti comandi sulle rela
       Nella directory `/root/ovpn`:
       
     ```shell
-  openvpn client2.ovpn
+    openvpn client2.ovpn
     ```
 
   #### Configurazione
