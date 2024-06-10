@@ -21,7 +21,7 @@
     - [R201](#r201)
     - [R202](#r202)
     - [R203](#r203) [[Firewall](#firewall)]
-3. [Client-200](#client-200) [[AppArmor](#mandatory-access-control-→-apparmor)]
+3. [Client-200](#client-200) [[AppArmor](#apparmor)]
 4. [AS300](#as300)
     - [R301](#r301)
     - [R302](#r302)
@@ -393,7 +393,7 @@
   ip route add default via 192.168.200.1
     ```
     
-    #### Mandatory Access Control → AppArmor
+    #### AppArmor
     
     Avendo avuto problemi ad installarlo sulla macchina in GNS3, è stato implementato in una macchina virtuale.
 
