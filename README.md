@@ -1,10 +1,11 @@
 # NSD-project
 
-[<kbd> <br> Presentazione <br> </kbd>](Presentazione.pdf)
-
 ### Autore
 
 * **Pierpaolo Spaziani** (matricola 0316331)
+
+### Presentazione
+[<kbd> <br> Presentazione <br> </kbd>](Presentazione.pdf)
 
 ### Topologia
 
@@ -1013,7 +1014,7 @@ Distribuzione del materiale crittografico sui client:
   ```shell
   mkdir ovpn
   cd ovpn
-  vim ca.crt      # copy-paste server's /root/CA/ca.crt
+  vim ca.crt        # copy-paste server's /root/CA/ca.crt
   vim client1.crt   # copy-paste server's /root/CA/client1/client1.crt
   vim client1.key   # copy-paste server's /root/CA/client1/client1.key
   ```
@@ -1021,7 +1022,7 @@ Distribuzione del materiale crittografico sui client:
   ```shell
   mkdir ovpn
   cd ovpn
-  vim ca.crt      # copy-paste server's /root/CA/ca.crt
+  vim ca.crt        # copy-paste server's /root/CA/ca.crt
   vim client2.crt   # copy-paste server's /root/CA/client2/client2.crt
   vim client2.key   # copy-paste server's /root/CA/client2/client2.key
   ```
