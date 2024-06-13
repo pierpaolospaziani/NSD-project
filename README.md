@@ -563,7 +563,7 @@
   ip route add 3.2.20.0/24 via 3.10.10.254 dev eth0.200
   ```
   
-  Si abilita il NAT verso l'interfaccia `eth1` e si evita la comunicazione tra i due tenant a causa del gateway in comune:
+  Si abilita il NAT verso l'interfaccia `eth1`:
   
   ```shell
   iptables -A POSTROUTING -t nat -o eth1 -j MASQUERADE
